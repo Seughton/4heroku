@@ -39,30 +39,62 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="container">
         <!--Header-->
         <header>
-          <div class="toggle"><i class="fas fa-bars"></i></div>
-          <nav class="navbar">
+          <div class="header-container">
+            <div class="navlogo"> <!--Logo-->
+              <a href="#"><img src="img/navbar/logo1.png" alt="logo"></a>
+          </div>
+                <input type="checkbox" id="menu-checkbox">
+                <nav class="navbar" role="navigation">
+                  <label for="menu-checkbox" class="toggle-button"
+                         data-open="X" data-close="CLOSE" onclick=""></label>
+                  <ul class="main-menu">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Addons</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Info</a></li>
+                  </ul>
 
-            <div class="navlogo" > <!--Logo-->
-              <span>WoW Addons</span>
-            </div>
-            <ul class="menu">
-              <li class="menuitem"><a href="#">Menu</a></li>
-              <li class="menuitem"><a href="#">Menu</a></li>
-              <li class="menuitem"><a href="#">Menu</a></li>
-              <li class="menuitem"><a href="#">Menu</a></li>
-            </ul>
-
-          </nav>
+                </nav>
+          </div>
         </header>
         <!--Header end-->
 
         <!--Content-->
+      <main>
+        <div class="main-container">
 
+          <section class="side-bar">
+            <div class="category">
+              <div class="search">
+                <form>
+                  <input type="search" placeholder="Искать здесь...">
+                  <button type="submit"></button>
+                </form>
+              </div>
+              <a href="#"><p>Vanilla</p></a>
+              <a href="#"><p>The Burning Crusade</p></a>
+              <a href="#"><p>Wrath of the Lich King</p></a>
+              <a href="#"><p>Cataclysm</p></a>
+              <a href="#"><p>Mists of Pandaria</p></a>
+              <a href="#"><p>Warlords of Draenor</p></a>
+              <a href="#"><p>Battle for Azeroth</p></a>
+            </div>
+          </section>
+         <section class="main-content">
+
+         </section>
+
+        </div>
+
+      </main>
         <!--Content end-->
+      
+      <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
       <!-- Main script-->
       <script src="app/app.js"></script>
     </div>

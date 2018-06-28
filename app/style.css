@@ -19,85 +19,185 @@ body
     height: 2000px;
 }
 
-.container
+/* Header styles*/
+.header-container
 {
-    width: 1100px;
+    width: 80%;
     margin: 0 auto;
-
-}
-
-
-header nav
-{
+    display: flex;
+    justify-content: space-around;
     border-top: white 0.5px solid;
     border-bottom: white 0.5px solid;
-    display: flex;
-    align-items: center;
     margin-top: 20px;
     height: 50px;
-
+    align-items: center;
 }
-.container header .navbar .navlogo span
-{
-    font-size: 24px;
-    font-family: 'Metamorphous', cursive;
-    color: #472B1E;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.menu,
-.menu ul
-{
+nav ul{
     display: flex;
-    margin-right: 10px;
-}
-.menuitem:hover {
-    background: rgba(1,0,0,0.5);
+    font-family: 'Metamorphous', cursive;
+    font-size: 16px;
 
 }
-.menuitem
-{
-    width: 200px;
-    height: 45px;
-    text-align: center;
-    padding-top: 10px;
+
+nav ul li a {
+
+    padding: 13px 70px ;
+}
+nav ul li a:hover {
+    background: rgba(32, 46, 71, 0.4);
+
 }
 
-.menu li a
-{
-    font-size: 18px;
-    color: white !important;
-}
-
-.toggle {
-    width: 100%;
-    background: rgba(33, 103, 125, 0.5);
-    text-align: right;
-    padding: 10px 50px;
-    color: #fff;
-    font-size: 24px;
+#menu-checkbox{
     display: none;
 }
+.navlogo {
+    padding-top: 10px;
+}
+/*End header styles*/
 
-@media (max-width: 768px) {
+/* Content style*/
+.main-container{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.side-bar {
+    border-radius: 10px 0 0 10px;
+    width: 25%;
+    background-color: rgba(186,186,186,0.5);
 
-    .toggle
-    {
-        display: block;
-    }
-    .navlogo span
-    {
-        display: block;
-        height: 100px;
+}
+.category {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Metamorphous;
+    font-size: 16px;
+
+}
+.category p {
+    justify-content: center;
+    width: 200px;
+}
+.category a {
+    padding-top: 10px;
+    height: 40px;
+}
+.side-bar .category a:hover {
+
+    background-color: rgba(235, 175, 103, 0.3);
+}
+.main-content {
+
+    width: 55%;
+
+    background-color: #5a5a59;
+    height: 100px;
+}
+/*End content styles*/
+
+
+/*Phone adaptive styles 420px*/
+@media screen and ( max-width: 420px) {
+    .header-container {
         width: 100%;
     }
-    /*.menu {
-        width: 100%;
-    }*/
-    .menuitem
-    {
+    .main-menu {
+        display: none;
+    }
+    .main-menu li {
+        width: 250px;
+        margin: 0 auto;
         display: block;
+        font-size: 16px;
+    }
+    .navlogo {
+        display: block;
+        margin: 0 auto;
+
+    }
+    .main-menu li a {
+        display: block;
+        padding: 10px 40px;
+
+    }
+    .toggle-button {
         text-align: center;
+        display: block;
+        padding-right: 40px;
+        cursor: pointer;
     }
+    .toggle-button:after {
+        content: attr(data-open);
+        display: block;
+        margin: 0 auto;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu  {
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu li{
+
+        width: 200px;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button {
+        content: attr(data-close);
+        position: relative;
+        top: 80px;
+        right: -48px;
+        width: 5px;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] {
+        width: 100px;
+    }
+
+
+    .header-container a {
+        margin-right: -65px;
+    }
+    .main-menu {
+        position: relative;
+        top: 100px;
+        right: 200px;
+    }
+    main {
+        display: none;
+    }
+}
+
+/*End 420px style*/
+@media screen and (min-width: 420px) and (max-width: 1100px) {
+    .navlogo {
+        display: none;
+    }
+}
+
+search {background: #DABB52;}
+.search input, .d2 button {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+.search input {
+    width: 100%;
+    height: 42px;
+    background: #F9F0DA;
+    padding-left: 15px;
+}
+.search button {
+    height: 26px;
+    width: 26px;
+
+    background: #F15B42;
+    cursor: pointer;
+}
+.search button:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    color: #F9F0DA;
+    font-size: 20px;
+    font-weight: bold;
 }
