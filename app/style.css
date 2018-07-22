@@ -11,12 +11,17 @@ a {text-decoration: none; /*убираем подчеркивание текст
 
 body
 {
+    display: flex;
+    flex-direction: column;
     background-image: url(img/Background.png);
     background-attachment: scroll;
     background-position: center top;
     background-color: #0b0a0a;
     background-repeat: no-repeat;
-    height: 2000px;
+
+}
+html,body {
+    height: 100%;
 }
 
 /* Header styles*/
@@ -32,7 +37,7 @@ body
     height: 50px;
     align-items: center;
 }
-nav ul{
+.navbar ul{
     display: flex;
     font-family: 'Metamorphous', cursive;
     font-size: 16px;
@@ -45,14 +50,15 @@ nav ul{
     align-items: center;
     border-radius: 10px;
 }
-nav ul li a {
+.navbar ul li a {
     color: #fff;
     padding: 13px 70px ;
 }
-nav ul li a:hover {
+.navbar ul li a:hover {
     background: rgba(32, 46, 71, 0.4);
 
 }
+
 
 #menu-checkbox{
     display: none;
@@ -68,25 +74,24 @@ nav ul li a:hover {
     padding-top: 10px;
     display: flex;
     justify-content: center;
-
-
 }
-.side-bar {
-    border-radius: 10px 0 0 10px;
+.tab {
+    width: 10px;
+}
+aside {
+    border-radius: 10px 0 0 0px;
     width: 20%;
     background-color: rgba(186,186,186,0.5);
-    height: auto;
-
+    /*height: fit-content;*/
 }
+
 .category {
     padding-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-family: Metamorphous;
     font-size: 16px;
-
 }
 
 .category p {
@@ -94,10 +99,11 @@ nav ul li a:hover {
     width: 200px;
 }
 .category a {
+
     padding-top: 10px;
-    height: 40px;
+    height: 50px;
 }
-.side-bar .category a:hover {
+aside .category a:hover {
 
     background-color: rgba(235, 175, 103, 0.3);
 }
@@ -105,7 +111,8 @@ nav ul li a:hover {
 
     width: 60%;
     background-color: rgba(27,25,23, 0.7);
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 0 0;
+
 
 }
 
@@ -121,13 +128,15 @@ nav ul li a:hover {
     flex-basis: 240px;
     min-width: 230px;
     max-width: 300px;
+
 }
 .journal-item-img {
     border-radius: 10px 10px 0 0;
     height: 150px;
     width: 100%;
-    background-image: url(img/content/asd.png);
+    position: initial;
     background-size:cover;
+    background-position-x: 50%;
     cursor: pointer;
 }
 .journal-item-title {
@@ -205,9 +214,176 @@ nav ul li a:hover {
     float: left;
 }
 
+#idpages,#idpage1,#idpage2,#idpage3,#idpage4,#idpage5,
+#idpage6,#idpage7,#idpage8,#idpage9,#idpage10 {
+    display: flex;
+    flex-wrap: wrap;
+}   /*______All news-content direction_______*/
+
+/*paginator styles*/
+[data-pagination],
+[data-pagination] *,
+[data-pagination] *:before,
+[data-pagination] *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+}
+[data-pagination] {
+    font-size: 8pt;
+    line-height: 1;
+    font-weight: 400;
+    font-family: 'Open Sans', 'Source Sans Pro', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    margin: 1em auto;
+    text-align: center;
+    transition: font-size .2s ease-in-out;
+}
+[data-pagination] ul {
+    list-style-type: none;
+    display: inline;
+    font-size: 100%;
+    margin: 0;
+    padding: .5em;
+}
+[data-pagination] ul li {
+    display: inline-block;
+    font-size: 100%;
+    width: auto;
+    border-radius: 3px;
+}
+[data-pagination] > a {
+    font-size: 140%;
+}
+[data-pagination] a {
+    color: #777;
+    font-size: 100%;
+    padding: .5em;
+}
+[data-pagination] a:focus,
+[data-pagination] a:hover {
+    color: #f60;
+}
+[data-pagination] li:active {
+    background: rgba(0,0,0,.1)
+}
+/* Disabled & Hidden Styles */
+[data-pagination] .disabled,
+[data-pagination] [hidden],
+[data-pagination] [disabled] {
+    opacity: .5;
+    pointer-events: none;
+}
+
 /*End content styles*/
 
+header,main {
+    flex: 1 0 auto;
+}
+footer {
+    border-radius: 0 0 10px 10px ;
+    background-color: #0b0a0a;
+    flex: 0 0 auto;
+    margin: 0 auto;
+    width: 81%;
 
+}
+/*Footer style*/
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 95px;
+    padding-bottom: 105px;
+}
+.footer-navigation {
+    display: flex;
+    flex-direction: row;
+
+
+}
+.footer-logo {
+    margin-left: 90px;
+    margin-right: 150px;
+
+}
+.footer-logo img {
+
+    height: 24px;
+    width: 120px;
+}
+.footer-navigation-items {
+    color: #ffffff;
+}
+.footer-navigation {
+
+    font-family: 'Metamorphous', cursive;
+    font-size: 16px;
+}
+.footer-navigation ul {
+    display: flex;
+
+    padding-right: 70px;
+}
+.footer-navigation ul li a {
+
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.contact-logos {
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.contact-logos-items {
+    margin-bottom: 15px;
+}
+.contact-logos-items a span {
+    padding-left: 10px;
+    position: relative;
+    color: #fff;
+}
+.footer-hr {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(34,34,34,1);
+}
+.footer-copyright-info {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.footer-copyright-info span {
+    color: rgba(100,100,100,1);
+}
+/*End footer styles*/
+
+/*About us page styles*/
+.About-us {
+    padding: 50px 100px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(200,200,200,0.9);
+    text-align: center;
+}
+.About-us-header2 {
+    font-size: 48px;
+}
+.About-us-header3 {
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+.About-us-p {
+    padding-top: 40px;
+}
+
+/*End about us page*/
 /*Phone adaptive styles 420px*/
 @media screen and ( max-width: 420px) {
     .header-container {
@@ -274,7 +450,11 @@ nav ul li a:hover {
     main {
         display: none;
     }
+    footer {
+        display: none;
+    }
 }
+
 
 /*End 420px style*/
 @media screen and (min-width: 420px) and (max-width: 1100px) {
@@ -283,7 +463,28 @@ nav ul li a:hover {
     }
 }
 
-
+/*paginator responsive*/
+@media (min-width: 350px) {
+    [data-pagination] {
+        font-size: 10pt;
+    }
+}
+@media (min-width: 500px) {
+    [data-pagination] {
+        font-size: 12pt;
+    }
+}
+@media (min-width: 700px) {
+    [data-pagination] {
+        font-size: 14pt;
+    }
+}
+@media (min-width: 900px) {
+    [data-pagination] {
+        font-size: 16pt;
+    }
+}
+/**************************/
 /*
 search {background: #DABB52;}
 .search input, .d2 button {

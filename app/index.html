@@ -16,7 +16,7 @@
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="application-name" content="WoW Addons">
-  <link rel="icon" sizes="192x192" href="img/favicon/favicon.ico">
+  <link rel="icon" sizes="192x192" href="favicon.ico">
 
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -29,21 +29,24 @@
   <meta name="theme-color" content="#2F3BA2">
 
   <!--Font awesome-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="fontawesome.css">
 
   <!-- App styles -->
   <link rel="stylesheet" href="style.css">
 
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-          crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
 
-  <!--Metamorphous font-->
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
 </head>
 
 <body>
+<div class="wrap">
         <!--Header-->
         <header>
           <div class="header-container">
@@ -55,10 +58,10 @@
                   <label for="menu-checkbox" class="toggle-button"
                          data-open="X" data-close="CLOSE" onclick=""></label>
                   <ul class="main-menu">
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Addons</a></li>
-                    <li><a href="#">Download</a></li>
-                    <li><a href="#">Info</a></li>
+                    <li><a href="index.html">News</a></li>
+                    <li><a href="addons.html">Addons</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
                   </ul>
 
                 </nav>
@@ -70,7 +73,7 @@
       <main>
         <div class="main-container">
 
-          <section class="side-bar">
+          <aside>
             <div class="category">
              <!-- <div class="search">
                 <form>
@@ -87,41 +90,45 @@
               <a href="#"><p>Warlords of Draenor</p></a>
               <a href="#"><p>Battle for Azeroth</p></a>
             </div>
-          </section>
+          </aside>
+          <div class="tab"></div>
          <section class="main-content">
-           <div class="id1">
-               <div class="journal-box">
-                   <div class="journal-item-img">
-                       <a href="#">
+           <!--News-journal-->
+           <div id="idpages">
+             <div id="idpage1" >
+             <div class="id1">
+           <div class="journal-box">
+             <div class="journal-item-img" style="background-image: url(img/content/asd.png);">
+               <a href="#">
 
-                       </a>
-                   </div>
-                   <div class="journal-item-title">
-                       <h3>
-                           <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
-                       </h3>
-                   </div>
-                   <div class="journal-item-desc">
-                       <p></p>
-                       <p>Зайдите в лаунчер батл.нета и узрите!
-                           Началась предзагрузка препатча Battle for Azeroth!</p>
-                       <p></p>
-                   </div>
-                   <div class="journal-item-info">
-                       <div class="journal-item-info-date">26.06.18</div>
-                       <div class=" button-like button-like-active">
-                           <span class="button-like-number">3</span>
-                       </div>
-                       <div class="showing">
-                           <div class="showing-views">123</div>
-                           <div class="showing-comments">123</div>
-                       </div>
-                   </div>
+               </a>
+             </div>
+             <div class="journal-item-title">
+               <h3>
+                 <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+               </h3>
+             </div>
+             <div class="journal-item-desc">
+               <p></p>
+               <p>Зайдите в лаунчер батл.нета и узрите!
+                 Началась предзагрузка препатча Battle for Azeroth!</p>
+               <p></p>
+             </div>
+             <div class="journal-item-info">
+               <div class="journal-item-info-date">26.06.18</div>
+              <button class=" button-like button-like-active">
+                 <span class="button-like-number">3</span>
+              </button>
+               <div class="showing">
+                 <div class="showing-views">123</div>
+                 <div class="showing-comments">123</div>
                </div>
+             </div>
            </div>
+         </div>
              <div class="id2">
-                 <div class="journal-box">
-                     <div class="journal-item-img">
+                 <div class="journal-box" >
+                     <div class="journal-item-img" style="background-image: url(img/content/id2.jpg);">
                          <a href="#">
 
                          </a>
@@ -149,20 +156,2744 @@
                      </div>
                  </div>
              </div>
+             <div class="id3">
+               <div class="journal-box">
+                 <div class="journal-item-img">
+                   <a href="#">
+
+                   </a>
+                 </div>
+                 <div class="journal-item-title">
+                   <h3>
+                     <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                   </h3>
+                 </div>
+                 <div class="journal-item-desc">
+                   <p></p>
+                   <p>Зайдите в лаунчер батл.нета и узрите!
+                     Началась предзагрузка препатча Battle for Azeroth!</p>
+                   <p></p>
+                 </div>
+                 <div class="journal-item-info">
+                   <div class="journal-item-info-date">26.06.18</div>
+                   <div class=" button-like button-like-active">
+                     <span class="button-like-number">3</span>
+                   </div>
+                   <div class="showing">
+                     <div class="showing-views">123</div>
+                     <div class="showing-comments">123</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="id4">
+               <div class="journal-box">
+                 <div class="journal-item-img">
+                   <a href="#">
+
+                   </a>
+                 </div>
+                 <div class="journal-item-title">
+                   <h3>
+                     <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                   </h3>
+                 </div>
+                 <div class="journal-item-desc">
+                   <p></p>
+                   <p>Зайдите в лаунчер батл.нета и узрите!
+                     Началась предзагрузка препатча Battle for Azeroth!</p>
+                   <p></p>
+                 </div>
+                 <div class="journal-item-info">
+                   <div class="journal-item-info-date">26.06.18</div>
+                   <div class=" button-like button-like-active">
+                     <span class="button-like-number">3</span>
+                   </div>
+                   <div class="showing">
+                     <div class="showing-views">123</div>
+                     <div class="showing-comments">123</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="id5">
+               <div class="journal-box">
+                 <div class="journal-item-img">
+                   <a href="#">
+
+                   </a>
+                 </div>
+                 <div class="journal-item-title">
+                   <h3>
+                     <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                   </h3>
+                 </div>
+                 <div class="journal-item-desc">
+                   <p></p>
+                   <p>Зайдите в лаунчер батл.нета и узрите!
+                     Началась предзагрузка препатча Battle for Azeroth!</p>
+                   <p></p>
+                 </div>
+                 <div class="journal-item-info">
+                   <div class="journal-item-info-date">26.06.18</div>
+                   <div class=" button-like button-like-active">
+                     <span class="button-like-number">3</span>
+                   </div>
+                   <div class="showing">
+                     <div class="showing-views">123</div>
+                     <div class="showing-comments">123</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="id6">
+               <div class="journal-box">
+                 <div class="journal-item-img">
+                   <a href="#">
+
+                   </a>
+                 </div>
+                 <div class="journal-item-title">
+                   <h3>
+                     <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                   </h3>
+                 </div>
+                 <div class="journal-item-desc">
+                   <p></p>
+                   <p>Зайдите в лаунчер батл.нета и узрите!
+                     Началась предзагрузка препатча Battle for Azeroth!</p>
+                   <p></p>
+                 </div>
+                 <div class="journal-item-info">
+                   <div class="journal-item-info-date">26.06.18</div>
+                   <div class=" button-like button-like-active">
+                     <span class="button-like-number">3</span>
+                   </div>
+                   <div class="showing">
+                     <div class="showing-views">123</div>
+                     <div class="showing-comments">123</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="id7">
+               <div class="journal-box">
+                 <div class="journal-item-img">
+                   <a href="#">
+
+                   </a>
+                 </div>
+                 <div class="journal-item-title">
+                   <h3>
+                     <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                   </h3>
+                 </div>
+                 <div class="journal-item-desc">
+                   <p></p>
+                   <p>Зайдите в лаунчер батл.нета и узрите!
+                     Началась предзагрузка препатча Battle for Azeroth!</p>
+                   <p></p>
+                 </div>
+                 <div class="journal-item-info">
+                   <div class="journal-item-info-date">26.06.18</div>
+                   <div class=" button-like button-like-active">
+                     <span class="button-like-number">3</span>
+                   </div>
+                   <div class="showing">
+                     <div class="showing-views">123</div>
+                     <div class="showing-comments">123</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="id8">
+               <div class="journal-box">
+                 <div class="journal-item-img">
+                   <a href="#">
+
+                   </a>
+                 </div>
+                 <div class="journal-item-title">
+                   <h3>
+                     <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                   </h3>
+                 </div>
+                 <div class="journal-item-desc">
+                   <p></p>
+                   <p>Зайдите в лаунчер батл.нета и узрите!
+                     Началась предзагрузка препатча Battle for Azeroth!</p>
+                   <p></p>
+                 </div>
+                 <div class="journal-item-info">
+                   <div class="journal-item-info-date">26.06.18</div>
+                   <div class=" button-like button-like-active">
+                     <span class="button-like-number">3</span>
+                   </div>
+                   <div class="showing">
+                     <div class="showing-views">123</div>
+                     <div class="showing-comments">123</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="id9">
+               <div class="journal-box">
+                 <div class="journal-item-img">
+                   <a href="#">
+
+                   </a>
+                 </div>
+                 <div class="journal-item-title">
+                   <h3>
+                     <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                   </h3>
+                 </div>
+                 <div class="journal-item-desc">
+                   <p></p>
+                   <p>Зайдите в лаунчер батл.нета и узрите!
+                     Началась предзагрузка препатча Battle for Azeroth!</p>
+                   <p></p>
+                 </div>
+                 <div class="journal-item-info">
+                   <div class="journal-item-info-date">26.06.18</div>
+                   <div class=" button-like button-like-active">
+                     <span class="button-like-number">3</span>
+                   </div>
+                   <div class="showing">
+                     <div class="showing-views">123</div>
+                     <div class="showing-comments">123</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             </div>
+             <div id="idpage2" style="display: none;">
+
+               <div class="id10">
+                 <div class="journal-box">
+                   <div class="journal-item-img" style="background-image: url(img/content/id10.jpg);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id11">
+                 <div class="journal-box" >
+                   <div class="journal-item-img" style="background-image: url(img/content/id11.jpg);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id12">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id13">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id14">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id15">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id16">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id17">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id18">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div id="idpage3" style="display: none;">
+
+               <div class="id19">
+                 <div class="journal-box">
+                   <div class="journal-item-img" style="background-image: url(img/content/asd.png);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id20">
+                 <div class="journal-box" >
+                   <div class="journal-item-img" style="background-image: url(img/content/id2.jpg);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id21">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id22">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id23">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id24">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id25">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id26">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id27">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div id="idpage4" style="display: none;">
+
+               <div class="id10">
+                 <div class="journal-box">
+                   <div class="journal-item-img" style="background-image: url(img/content/asd.png);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id11">
+                 <div class="journal-box" >
+                   <div class="journal-item-img" style="background-image: url(img/content/id2.jpg);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id12">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id13">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id14">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id15">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id16">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id17">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id18">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div id="idpage5" style="display: none;">
+
+               <div class="id10">
+                 <div class="journal-box">
+                   <div class="journal-item-img" style="background-image: url(img/content/asd.png);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id11">
+                 <div class="journal-box" >
+                   <div class="journal-item-img" style="background-image: url(img/content/id2.jpg);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id12">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id13">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id14">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id15">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id16">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id17">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id18">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div id="idpage6" style="display: none;">
+
+               <div class="id10">
+                 <div class="journal-box">
+                   <div class="journal-item-img" style="background-image: url(img/content/asd.png);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id11">
+                 <div class="journal-box" >
+                   <div class="journal-item-img" style="background-image: url(img/content/id2.jpg);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id12">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id13">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id14">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id15">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id16">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id17">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id18">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div id="idpage7" style="display: none;">
+
+               <div class="id10">
+                 <div class="journal-box">
+                   <div class="journal-item-img" style="background-image: url(img/content/asd.png);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id11">
+                 <div class="journal-box" >
+                   <div class="journal-item-img" style="background-image: url(img/content/id2.jpg);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id12">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id13">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id14">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id15">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id16">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id17">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id18">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div id="idpage8" style="display: none;">
+
+               <div class="id10">
+                 <div class="journal-box">
+                   <div class="journal-item-img" style="background-image: url(img/content/asd.png);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id11">
+                 <div class="journal-box" >
+                   <div class="journal-item-img" style="background-image: url(img/content/id2.jpg);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id12">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id13">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id14">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id15">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id16">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id17">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id18">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div id="idpage9" style="display: none;">
+
+               <div class="id10">
+                 <div class="journal-box">
+                   <div class="journal-item-img" style="background-image: url(img/content/asd.png);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id11">
+                 <div class="journal-box" >
+                   <div class="journal-item-img" style="background-image: url(img/content/id2.jpg);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id12">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id13">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id14">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id15">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id16">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id17">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id18">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div id="idpage10" style="display: none;">
+
+               <div class="id10">
+                 <div class="journal-box">
+                   <div class="journal-item-img" style="background-image: url(img/content/asd.png);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id11">
+                 <div class="journal-box" >
+                   <div class="journal-item-img" style="background-image: url(img/content/id2.jpg);">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id12">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id13">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id14">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id15">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id16">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id17">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="id18">
+                 <div class="journal-box">
+                   <div class="journal-item-img">
+                     <a href="#">
+
+                     </a>
+                   </div>
+                   <div class="journal-item-title">
+                     <h3>
+                       <a href="#">Началась предварительная <br> загрузка патча 8.01!</a>
+                     </h3>
+                   </div>
+                   <div class="journal-item-desc">
+                     <p></p>
+                     <p>Зайдите в лаунчер батл.нета и узрите!
+                       Началась предзагрузка препатча Battle for Azeroth!</p>
+                     <p></p>
+                   </div>
+                   <div class="journal-item-info">
+                     <div class="journal-item-info-date">26.06.18</div>
+                     <div class=" button-like button-like-active">
+                       <span class="button-like-number">3</span>
+                     </div>
+                     <div class="showing">
+                       <div class="showing-views">123</div>
+                       <div class="showing-comments">123</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+           </div>
+
+           <!--paginator-->
+           <nav id="paginator" data-pagination>
+             <!--<a id="pagination-arrow-left" href=#><i class="fas fa-angle-left"></i></a>-->
+             <ul id="paginator-list">
+               <li id="page1"><a href=#1>1</a>
+               <li id="page2"><a href=#2>2</a>
+               <li id="page3"><a href=#3>3</a>
+               <li id="page4"><a href=#4>4</a>
+               <li id="page5"><a href=#5>5</a>
+               <li id="page6"><a href=#6>6</a>
+               <li id="page7"><a href=#7>7</a>
+               <li id="page8"><a href=#8>8</a>
+               <li id="page9"><a href=#9>9</a>
+               <li id="page10"><a href=#10>10</a>
+             </ul>
+            <!-- <a  id="pagination-arrow-right" href=#><i class="fas fa-angle-right"></i></a>-->
+           </nav>
          </section>
+
 
         </div>
 
       </main>
         <!--Content end-->
 
+        <!--Footer-->
+        <footer>
+        <div class="footer-content">
+          <nav class="footer-navigation">
+            <div class="footer-logo">
+              <img src="img/navbar/logo1.png" alt="logo">
+            </div>
+            <ul class="footer-navigation-items">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Addons</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+            </ul>
+          </nav>
+          <div class="contact-logos">
+            <ul class="fa-ul contact-logos-items">
+              <a href="#"><span class="fa-li"><i class="fab fa-facebook-f fa-lg"></i></span></a>
+              <a href="#"><span class="fa-li"><i class="fab fa-twitter fa-lg"></i></span></a>
+              <a href="#"><span class="fa-li"><i class="fab fa-vk fa-lg"></i></span></a>
+              <a href="#"><span class="fa-li"><i class="fab fa-youtube fa-lg"></i></span></a>
+              <a href="#"><span class="fa-li"><i class="fab fa-discord fa-lg"></i></span></a>
+            </ul>
+          </div>
+        </div>
+          <hr class="footer-hr">
+          <div class="footer-copyright-info">
+              <span><i class="far fa-copyright"></i>Copyright. Designed by Seughton</span>
+          </div>
+        </footer>
+        <!--Footer end-->
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
+          integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
+          crossorigin="anonymous"></script>
       <script
           src="https://code.jquery.com/jquery-3.3.1.min.js"
           integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
           crossorigin="anonymous"></script>
       <!-- Main script-->
-      <script src="app/app.js"></script>
+      <script src="app.js"></script>
+    <script src="/node_modules/jquery/src/jquery.js"></script>
     </div>
   </div>
+</div>
 </body>
 </html>
